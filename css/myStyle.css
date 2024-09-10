@@ -1,8 +1,13 @@
+body {
+    margin: 0;
+}
+
+
 .container {
     display: flex;
-    height: 100vh;
+    height: auto;
 
-    gap: 25px;
+    gap: 15px;
     flex-direction: row;
     justify-content: space-around;
     align-content: space-around;
@@ -10,31 +15,93 @@
 
 .sidebar-l {
     width: 280px;
-    height: 360px;
+    height: 83vh;
     background-color: skyblue;
     border: 2px solid black;
 
     display: flex;
     flex-grow: 1;
     align-self: flex-start;
+    flex-direction: column;
+    font-size: medium;
+    border-radius: 15px;
+
 }
 
 .content {
-    width: 280px;
-    height: 360px;
+    width: 80vw;
+    height: 83vh;
     background-color: skyblue;
     border: 2px solid black;
 
     display: flex;
     flex-grow: 4;
+    font-size: medium;
+    flex-direction: column;
+    border-radius: 15px;
 }
 .sidebar-r {
     width: 280px;
-    height: 360px;
+    height: 83vh;
     background-color: skyblue;
     border: 2px solid black;
 
     display: flex;
+    flex-direction: column;
 
     flex-grow: 2;
+    font-size: medium;
+    border-radius: 15px;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: mediumpurple;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    color: white;
+
+}
+
+header {
+    background-color: mediumpurple;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    margin: 0;
+}
+
+.icon {
+    color: white;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .sidebar-l, .sidebar-r, .content {
+        width: 100%;
+
+    }
+}
+
+/*
+Bronnen;
+w3schools
+Jay
+Flexbox froggy
+
+
+*\
+
+
+
+
+
