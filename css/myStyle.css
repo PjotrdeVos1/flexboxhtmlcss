@@ -1,36 +1,71 @@
+body {
+    margin: 0;
+}
 .container {
     display: grid;
-    height: 100vh;
+    height: 83vh;
 
-    gap: 25px;
-    justify-content: space-around;
-    align-content: space-around;
-    grid-template: auto;
+    gap: 15px;
+    justify-content: space-between;
+    row-gap: 5px;
+
 }
 
 .sidebar-l {
-    width: 280px;
-    height: 360px;
+    width: 25vw;
+    height: 83vh;
     background-color: skyblue;
     border: 2px solid black;
 
     display: grid;
+    grid-row: 1;
+    grid-column: 1;
 
 }
 
 .content {
-    width: 280px;
-    height: 360px;
+    width: 33vw;
+    height: 83vh;
     background-color: skyblue;
     border: 2px solid black;
 
     display: grid;
+    grid-row: 1;
+    grid-column: 2;
 }
 .sidebar-r {
-    width: 280px;
-    height: 360px;
+    width: 33vw;
+    height: 83vh;
     background-color: skyblue;
     border: 2px solid black;
 
     display: grid;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+header {
+    background-color: mediumpurple;
+    display: grid;
+    grid-template-columns: 40fr auto 1fr; /* Adjust this to fit your content needs */
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    margin: 0;
+}
+
+
+.icon {
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: mediumpurple;
+    padding: 22px;
+    position: sticky;
+    bottom: 0;
+    color: white;
+    grid-row: 4;
 }
